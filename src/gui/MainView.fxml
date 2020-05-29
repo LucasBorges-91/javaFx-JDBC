@@ -6,8 +6,7 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
    <content>
       <VBox prefHeight="347.0" prefWidth="521.0">
          <children>
@@ -15,21 +14,21 @@
               <menus>
                 <Menu mnemonicParsing="false" text="Cadastrar">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Proprietario" />
-                        <MenuItem mnemonicParsing="false" text="Apartamento" />
-                        <MenuItem mnemonicParsing="false" text="Inquilino" />
+                    <MenuItem fx:id="menuItemProprietario" mnemonicParsing="false" onAction="#onMenuItemProprietarioAction" text="Proprietario" />
+                        <MenuItem fx:id="menuItemApartamento" mnemonicParsing="false" onAction="#onMenuItemApartamentoAction" text="Apartamento" />
+                        <MenuItem fx:id="menuItemInquilino" mnemonicParsing="false" onAction="#onMenuItemInquilinoAction" text="Inquilino" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Buscar">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Proprietario" />
-                        <MenuItem mnemonicParsing="false" text="Apartamento" />
-                        <MenuItem mnemonicParsing="false" text="Inquilino" />
+                    <MenuItem fx:id="menuItemBuscaProprietario" mnemonicParsing="false" onAction="#onMenuItemBuscaProprietarioAction" text="Proprietario" />
+                        <MenuItem fx:id="menuItemBuscaApartamento" mnemonicParsing="false" onAction="#onMenuItemBuscaApartamentoAction" text="Apartamento" />
+                        <MenuItem fx:id="menuItemBuscaInquilino" mnemonicParsing="false" onAction="#onMenuItemBuscaInquilinoAction" text="Inquilino" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
+                    <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" text="About" />
                   </items>
                 </Menu>
               </menus>
