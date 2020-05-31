@@ -1,4 +1,4 @@
-package gui;
+package controller;
 
 import gui.util.Alerts;
 import javafx.fxml.FXML;
@@ -57,17 +57,17 @@ public class MainViewController implements Initializable {
 
   @FXML
   public void onMenuItemBuscaProprietarioAction() {
-    System.out.println("onMenuItemBuscaProprietarioAction");
+    loadView( "/gui/ProprietarioList.fxml");
   }
 
   @FXML
   public void onMenuItemBuscaApartamentoAction() {
-    System.out.println("onMenuItemBuscaApartamentoAction");
+    loadView( "/gui/ApartamentoList.fxml");
   }
 
   @FXML
   public void onMenuItemBuscaInquilinoAction() {
-    System.out.println("onMenuItemBuscaInquilinoAction");
+    loadView( "/gui/InquilinoList.fxml");
   }
 
   @FXML
